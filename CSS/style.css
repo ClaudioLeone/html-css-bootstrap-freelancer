@@ -1,20 +1,65 @@
+/* RESET */
+img{
+    width: 100%;
+}
 /* UTILITIES */
 
 .title_fontsize{
-    font-size: 0.65rem;
+    font-size: 0.6rem;
+}
+
+.header_color{
+    background-color: rebeccapurple;
 }
 
 /* CLASSES */
 .header_box{
-    border: 1px solid black;
-    background-color: rebeccapurple;
     color: white;
     height: 40px;
+    
+    /* debug */
+    border: 1px solid black;
 }
 
 .hamburger_box{
-    border: 1px solid black;
     border-radius: 5px;
     background-color:crimson;
     padding: 0 5px;
+    
+    /* debug */
+    border: 1px solid black;
+}
+
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* debug */
+    /* height: 320px; */
+    background-color: burlywood;
+}
+
+.jumbotron > *{
+    color: white;
+    margin: 20px 0;
+}
+
+.jumbotron h5{
+    font-size: 0.8rem;
+}
+
+.jumbotron hr{
+    border: 1px solid white;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.jumbo_img{
+    width: 100px;
+    margin: 20px auto 0;
+
+    /* debug */
+    height: 100px;
+    background-color: cornflowerblue;
 }
