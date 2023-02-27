@@ -2,6 +2,11 @@
 img{
     width: 100%;
 }
+/* VARIABLES */
+:root{
+    --vertical_spacing: 20px;
+}
+
 /* UTILITIES */
 
 .title_fontsize{
@@ -16,6 +21,24 @@ img{
     background-color: darkorange;
     color: white;
     margin: 10px 0;
+}
+
+h3{
+    font-size: 1.35rem;
+}
+
+.text_clr{
+    color: white;
+}
+
+.bg_clr{
+    background-color: lightseagreen;
+}
+
+hr{
+    border: 1px solid white;
+    width: 20%;
+    margin: 0 auto;
 }
 
 /* CLASSES */
@@ -40,15 +63,11 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    /* debug */
-    /* height: 320px; */
-    background-color: burlywood;
 }
 
 .jumbotron > *{
     color: white;
-    margin: 20px 0;
+    margin: var(--vertical_spacing) 0;
 }
 
 .jumbotron h5{
@@ -63,7 +82,7 @@ img{
 
 .jumbo_img{
     width: 100px;
-    margin: 20px auto 0;
+    margin: var(--vertical_spacing) auto 0;
 
     /* debug */
     height: 100px;
@@ -77,20 +96,36 @@ img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: var(--vertical_spacing) auto;
 }
 
 .portfolio-text{
-    margin: 20px 0;
+    margin: var(--vertical_spacing) 0;
 }
-
-.portfolio-text h3{
-    font-size: 1.35rem;
-}
-
 
 .portfolio-text hr{
     width: 20%;
     margin: 1rem auto;
     border: 1px solid black;
+}
+
+.about_sect{
+    padding: var(--vertical_spacing) 0;
+}
+
+.about_sect > *{
+    margin: var(--vertical_spacing) auto;
+}
+
+.about_sect hr{
+    margin: var(--vertical_spacing) auto;
+}
+
+.download_btn a{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: white;
 }
