@@ -12,6 +12,12 @@ img{
     background-color: rebeccapurple;
 }
 
+._col{
+    background-color: darkorange;
+    color: white;
+    margin: 10px 0;
+}
+
 /* CLASSES */
 .header_box{
     color: white;
@@ -62,4 +68,29 @@ img{
     /* debug */
     height: 100px;
     background-color: cornflowerblue;
+}
+
+.col_img{
+
+    /* debug */
+    background-color: yellowgreen;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.portfolio-text{
+    margin: 20px 0;
+}
+
+.portfolio-text h3{
+    font-size: 1.35rem;
+}
+
+
+.portfolio-text hr{
+    width: 20%;
+    margin: 1rem auto;
+    border: 1px solid black;
 }
