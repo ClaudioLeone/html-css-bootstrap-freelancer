@@ -1,0 +1,20 @@
+/* UTILITIES */
+
+.title_fontsize{
+    font-size: 0.65rem;
+}
+
+/* CLASSES */
+.header_box{
+    border: 1px solid black;
+    background-color: rebeccapurple;
+    color: white;
+    height: 40px;
+}
+
+.hamburger_box{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:crimson;
+    padding: 0 5px;
+}
