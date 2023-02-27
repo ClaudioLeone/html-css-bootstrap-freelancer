@@ -41,6 +41,15 @@ hr{
     margin: 0 auto;
 }
 
+/* IDs */
+#msg_area{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    margin-bottom: 10px;
+}
+
 /* CLASSES */
 .header_box{
     color: white;
@@ -109,15 +118,15 @@ hr{
     border: 1px solid black;
 }
 
-.about_sect{
+.bottom_sect{
     padding: var(--vertical_spacing) 0;
 }
 
-.about_sect > *{
+.bottom_sect > *{
     margin: var(--vertical_spacing) auto;
 }
 
-.about_sect hr{
+.bottom_sect hr{
     margin: var(--vertical_spacing) auto;
 }
 
@@ -128,4 +137,32 @@ hr{
     text-decoration: none;
     font-size: 0.75rem;
     color: white;
+}
+
+.contactme_hr{
+    width: 20%;
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+
+.contactme_form hr{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contactme_form a{
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.msg_span{
+    display: block;
+}
+
+.send_btn{
+    width: 65px;
 }
