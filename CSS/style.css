@@ -43,10 +43,6 @@ h3{
     font-size: 1.35rem;
 }
 
-.text_clr{
-    color: white;
-}
-
 .bg_clr{
     background-color: #1ABC9C;
 }
@@ -93,6 +89,10 @@ footer div:nth-child(3){
     color: #1ABC9C
 }
 
+.green-bg-clr{
+    background-color: #1ABC9C
+}
+
 .footer_small_txt{
     font-size: 0.7rem;
     margin-bottom: 0;
@@ -109,6 +109,15 @@ footer div:nth-child(3){
     border-bottom: 1px solid black;
     border-left: 0;
     margin-bottom: 10px;
+    opacity: 0.3;
+}
+
+#name, #email, #phone_number, #msg_area{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    opacity: 0.3;
 }
 
 /* CLASSES */
