@@ -9,18 +9,27 @@ img{
 
 /* UTILITIES */
 
+textarea{
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.white_clr{
+    color:white;
+}
+
+.white_clr > hr{
+    color:white;
+}
+
 .title_fontsize{
-    font-size: 0.6rem;
+    font-weight: 700;
 }
 
-.header_color{
-    background-color: rebeccapurple;
-}
-
-._col{
-    background-color: darkorange;
-    color: white;
-    margin: 10px 0;
+.ms_header{
+    height: 55px;
+    background-color: #444362;
 }
 
 h3{
@@ -35,10 +44,26 @@ h3{
     background-color: lightseagreen;
 }
 
-hr{
-    border: 1px solid white;
-    width: 20%;
-    margin: 0 auto;
+._row{
+    margin-bottom: 30px;
+}
+
+.star_hr_dx{
+    border: 1px solid;
+    width: 70px;
+    align-self: center;
+    opacity: 1;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+.star_hr_sx{
+    border: 1px solid;
+    width: 70px;
+    align-self: center;
+    opacity: 1;
+    margin: 0 10px 0 0;
+    padding: 0;
 }
 
 /* IDs */
@@ -51,21 +76,35 @@ hr{
 }
 
 /* CLASSES */
-.header_box{
+.ms_hdr_row{
     color: white;
-    height: 40px;
-    
-    /* debug */
-    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.ms_hdr_row > *{
+    padding: 0;
 }
 
 .hamburger_box{
+    width: unset;
     border-radius: 5px;
-    background-color:crimson;
     padding: 0 5px;
-    
-    /* debug */
-    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.header_navlist{
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.header_navlist li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.header_navlist li a{
+    text-decoration: none;
+    color: white;
 }
 
 .jumbotron{
@@ -83,39 +122,21 @@ hr{
     font-size: 0.8rem;
 }
 
-.jumbotron hr{
-    border: 1px solid white;
-    width: 20%;
-    margin: 0 auto;
-}
-
 .jumbo_img{
-    width: 100px;
-    margin: var(--vertical_spacing) auto 0;
-
-    /* debug */
-    height: 100px;
-    background-color: cornflowerblue;
+    width: 200px;
+    margin: 20px auto 0;
 }
 
-.col_img{
-
-    /* debug */
+/* .col_img{
     background-color: yellowgreen;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     margin: var(--vertical_spacing) auto;
-}
+} */
 
 .portfolio-text{
     margin: var(--vertical_spacing) 0;
-}
-
-.portfolio-text hr{
-    width: 20%;
-    margin: 1rem auto;
-    border: 1px solid black;
 }
 
 .bottom_sect{
@@ -123,10 +144,6 @@ hr{
 }
 
 .bottom_sect > *{
-    margin: var(--vertical_spacing) auto;
-}
-
-.bottom_sect hr{
     margin: var(--vertical_spacing) auto;
 }
 
@@ -139,16 +156,7 @@ hr{
     color: white;
 }
 
-.contactme_hr{
-    width: 20%;
-    margin: 1rem auto;
-    border: 1px solid black;
-}
 
-.contactme_form hr{
-    width: 100%;
-    margin-top: 5px;
-}
 
 .contactme_form a{
     background-color: lightseagreen;
@@ -165,4 +173,11 @@ hr{
 
 .send_btn{
     width: 65px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 576px){
+    .title_fontsize {
+        font-size: 1rem;
+    }
 }
